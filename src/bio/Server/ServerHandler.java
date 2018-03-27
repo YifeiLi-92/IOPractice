@@ -32,7 +32,7 @@ public class ServerHandler implements Runnable {
             while (true) {
                 if ((expression = in.readLine()) == null) break;
                 result = sdf.format(new Date(Long.parseLong(expression)));
-                System.out.println("Port:" + port +"\nServer received data:" + result);
+                System.out.println("Port:" + port +"\nServer received data:" + expression);
                 out.println(result);
 
                 Thread.sleep(5000);
