@@ -18,7 +18,6 @@ public class ServerHandler implements Runnable {
     private volatile boolean started;
     private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-
     public ServerHandler(int port) {
         try {
             selector = selector.open();
